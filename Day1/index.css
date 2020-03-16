@@ -1,0 +1,25 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/Italianno/italianno-Regular.ttf);
+}
+body {
+    background-color:#507AA0;
+    font-family: 'myFirstFont';
+    font-size: 25px;
+}
+
+/*
+body {
+    background-image: url("./images/ProfileIcon.gif");
+}
+
+ h2 {
+    font-family: 'Rancho', cursive;
+    font-size: 35px;
+}
+
+p {
+    font-family: 'Rouge Script', cursive;
+    font-size: 30px;
+}
+*/
