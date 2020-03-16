@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <script>
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/shop.html">Shop</a>
+            </nav>
+        </header>
+    <main>
+    <section>
+        <article>
+            <hgroup>
+                <h1>GOATS</h1>
+                <h2>YOU WANT THEM? WE GOT THEM!</h2>
+            </hgroup>
+            <div>
+                <img src="/images/goat.jpg" alt="slipper 01" id="goat"/>
+                <p>
+                    Say Hello to Kevin the Goat. If you have seen "https://www.youtube.com/watch?v=yuwprXAaSv0" <br>
+                    then you know this Star goat. Kevin may look calm and cheerful on the outside but he's a true menace.
+                </p>
+                <p>
+                    Get to 50 and there's a surprise!!
+                </p>
+            </div>
+            <div class="barro">
+                <progress value="0" max="50" id="progress"></progress>
+                <button onclick="change($progress.getAttribute('value'))">Change Image</button>
+            </div>
+            <!-- <figcaption>&#163;29.99</figcaption> -->
+            <button>Add to Cart</button>
+        </article>
+    </section>
+    </main>
+        <script>
+            $progress = document.getElementById("progress");
+            $image = document.getElementById("goat");
+
+            function change($number)
+            {
+                if ($number >=  50) {
+                    transform()
+                } else {
+                    $number += 1;
+                    $progress.setAttribute("value", $number);
+                }
+                return $number
+            }
+
+            function transform()
+            {
+                $image.setAttribute("src","/images/ProfileIcon.gif");
+            }
+
+        </script>
+    <footer>
+        <span>Slip On My Goats</span>
+    </footer>
+    </body>
+</html>
